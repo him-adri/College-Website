@@ -1,0 +1,640 @@
+*{
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+}
+html{
+ scroll-behavior: smooth;
+ overflow-x: hidden;
+ scroll-padding-top: 6rem;
+}
+.fea-logo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.fea-logo img{
+  height: 50px;
+  width: 50px;
+}
+/* Title */
+.nav {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+  padding: 1vw 8vw;
+  z-index: 10000000;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+}
+.nav h2 {
+  color: black;
+  margin-left: -10%;
+  position: relative;
+  font-weight: 700;
+}
+.nav-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+.nav-item li {
+  list-style: none;
+  padding-right: 50px;
+}
+.nav-item li a {
+  text-decoration: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: black;
+  transition: 0.35s ease;
+}
+.nav-item li #login{
+  font-size: 1.6rem;
+}
+.nav-item li a:hover {
+  color: rgb(122, 81, 4);
+  text-decoration: underline;
+}
+.logo {
+  height: 60px;
+  width: 60px;
+  cursor: pointer;
+  margin-left: -100px;
+  margin-right: 20px;
+}
+
+
+.login{
+  float: right;
+  font-size: 1rem;
+  letter-spacing: -0.05em;
+}
+.login a{
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+.login a:hover{
+  color: rgba(205, 205, 42, 0.703);;
+}
+.login label{
+  color: black;
+}
+.login-form{
+  height: auto;
+  width: 230px;
+  position: fixed;
+  right: 10px;
+  top: 93px;
+  border-radius: 10px;
+  background: rgba(58, 201, 58, 0.71);
+  padding: 20px;
+  border: 2px solid black;
+  display: none;
+  z-index: 10000000;
+}
+
+.login-form form{
+  width: 250px;
+  margin:0 auto;
+  font-size: 16px;
+  color: gray;
+  letter-spacing: -0.05em;
+ 
+}
+.login-form input{
+  border: 1px solid black;
+  margin-left: 50px;
+}
+.login-form button{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: black;
+  color: white;
+  outline: none;
+  border: 0px;
+  width: 80%;
+  transition: 0.3s ease;
+  margin-left: 10px;
+}
+.login-form button :hover{
+  background-color:yellow;
+  color: black;
+}
+.login-form a{
+  text-decoration: none;
+  color:black;
+  margin-left: 50px;
+}
+.login-form a:hover{
+ text-decoration: underline;
+}
+.login img{
+  margin-right: 5px;
+  margin-bottom: 6px;
+}
+
+.signup-form{
+  height: auto;
+  width: 260px;
+  position: absolute;
+  right: 10px;
+   top: 93px;
+   border: 2px solid black;
+   position: fixed;
+   background: rgba(58, 201, 58, 0.71);
+  padding: 20px;
+  border-radius: 10px;
+  display: none;
+  z-index: 1000000;
+}
+.signup-form button{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: black;
+  color: white;
+  outline: none;
+  border: 0px;
+  width: 95%;
+  transition: 0.3s ease;
+}
+.signup-form form{
+  width: 250px;
+  margin:0 auto;
+  font-size: 16px;
+  color: gray;
+  letter-spacing: -0.05em;
+}
+.signup-form, .login-form label{
+  font-size: 1rem;
+  margin-bottom: 3px;
+   margin-top: 10px;
+  color: black;
+  margin-left: 50px;
+}
+#checkbox{
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+.s-check{
+  font-size: 14px;
+  color: black;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+}
+.signup-form button:hover{
+  background-color:yellow;
+  color: black;
+}
+/* Home */
+#home {
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5,4,46,0.7)), url(../Images/Building\ View\ of\ Karim\ City\ College\ edited.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+    margin-bottom: 50px;
+}
+#home h2{
+    color: white;
+    font-size: 5.2rem;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    margin-top: 100px;
+}
+#home p{
+    color: white;
+    font-size: 0.9rem;
+    line-height: 25px;
+    width: 50%;
+    margin-left:25%;
+
+}
+#home button{
+    width: 200px;
+    height: 50px;
+    margin-left: 50px;
+    margin-top: 50px;
+    transition: 0.3s ease;
+    font-size: 20px;
+    border:1px solid white;
+    border-radius: 10px;
+    color: white;
+}
+#home button:hover{
+    background-color: yellow;
+    color: black;
+}
+.marque{
+    color: white;
+    margin-top: 50px;
+}
+.marque a{
+    text-decoration: none;
+    color: white;
+}
+.marque a:hover{
+    color: yellow;
+}
+
+/* Features */
+
+.ribbon-img{
+    width: 16px;
+    height: 16px;
+}
+
+#features{
+    padding: 5vw 8vw 0 8vw;
+    text-align: center;
+    margin-bottom: 120px;
+}
+#features h2{
+  font-size: 4rem;
+  font-weight: 600;
+}
+#features .feature-base{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+  grid-gap: 1rem;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+#features .feature-box{
+    background: #F9F9FF;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: inset 5px 5px 15px #ffffff,
+                      5px 5px 15px black;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+#features .feature-box:hover{
+  transform: scale(1.1);
+  transition: .3s ease-in-out;
+}
+.features{
+  height: 65px;
+}
+#features .feature-box h3{
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgba(46,46,59);
+  padding: 13px 0 7px 0;
+  transition: 0.3s ease-in-out;
+}
+#features .feature-box h3:hover{
+  color: rgb(122, 81, 4);
+}
+#features .feature-box p{
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgba(46,46,87);
+  padding: 5px 5px;
+}
+#features .feature-box a{
+  font-size: .9rem;
+  font-weight: 400;
+  background: #f9fcff;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 2px;
+  transition: 0.3s ease-in-out;
+}
+#features .feature-box a:hover{
+  color: rgb(122, 81, 4);
+  text-decoration: underline;
+  transition: 0.3s ease-in-out;
+}
+#features .feature-box img{
+  margin-top: 20px;
+}
+/* Carousel */
+#slide{
+  padding: 5vw 8vw 0 8vw;
+    margin-bottom: 120px;
+}
+.carousel-inner{
+  background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5,4,46,0.7)), url(../Images/Building\ View\ of\ Karim\ City\ College\ edited.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 5% 10%;
+}
+.carousel-item {
+  padding: 7% 15%;
+  height:100%;
+  height: 100%;
+}
+.testimonial-text{
+  color:white;
+  font-size: 1.5rem;
+  margin-top: 10%;
+}
+.testimonial-text-one{
+  font-size: 3.5rem;
+  margin-top: 10%;
+  color:white;
+  border-radius: 10px;
+}
+.testimonial-text-two{
+  font-size: 1.3rem;
+  margin-top: 10%;
+  color: whitesmoke;
+  text-align: left;
+}
+.testimonial-img {
+  width: 20%;
+  margin-top: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.notes{
+  font-size: 34px;
+  color: whitesmoke;
+  font-size: 2.5rem;
+  text-decoration: underline;
+}
+
+/* Structure */
+#structure{
+  padding: 5vw 8vw 0 8vw;
+  text-align: center;
+}
+#structure h2{
+  font-size: 4rem;
+  font-weight: 600;
+
+}
+#structure p{
+ background-color : #F9F9FF;
+  border-radius: 10px;
+  margin-top: 10px;
+  text-align: start;
+}
+#structure .card{
+  margin-top: 50px;
+  box-shadow: inset 5px 5px 15px #ffffff,
+                      5px 5px 15px black;
+  border-radius: 10px;
+  background: #F9F9FF;
+  margin-bottom: 50px;
+  transition: .4s ease-in-out;
+  text-align: start;
+  cursor: pointer;
+}
+#structure .card:hover{
+  transform: scale(1.1);
+  transition: .4s ease-in-out;
+}
+
+/* Gallery */
+
+#gallery{
+  padding: 5vw 8vw 0 8vw;
+  text-align: center;
+  margin-bottom: 50px;
+}
+#gallery h2{
+  font-size: 4rem;
+  font-weight: 600;
+}
+.gallery-image img{
+  border-radius: 10px;
+  height: 180px;
+  width: 230px;
+  padding: 5px;
+  margin-right: 15px;
+  filter: grayscale(50%);
+  transition: 1sec;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+  margin-top: 50px;
+}
+.gallery-image img:hover{
+  filter: grayscale(0);
+  transform: scale(1.1);
+  
+}
+/* Reviews */
+#reviews h2{
+  font-size: 4rem;
+  font-weight: 600;
+}
+#reviews{
+  padding: 8vw 8vw 0 8vw;
+  text-align: center;
+ 
+}
+#reviews .person-box .profiles .image-name img{
+  border-radius: 50%;
+  height:30px;
+  width:30px; 
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+#reviews .person-box{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+  grid-gap: 1rem;
+  margin-top: 50px;
+  
+}
+
+#reviews .person-box .profiles{
+  padding: 30px 10px ;
+  background: #F9F9FF;
+  box-shadow: inset 5px 5px 15px #ffffff,
+                      5px 5px 15px black;
+  transition: .3s ease-in-out;
+  cursor: pointer;
+  border-radius: 20px;
+  width: 348px;
+  height: 301px;
+}
+#reviews .person-box .profiles:hover{
+  transform: scale(1.1);
+  transition: .3s ease-in-out;
+}
+
+#reviews .person-box .profiles p{
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}
+#reviews .person-box .profiles em{
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 20px;
+}
+#reviews .more-info{
+  text-align: right;
+  padding-top: 30px;
+}
+#reviews .more-info a{
+  text-decoration: none;
+  color: black;
+}
+#reviews .more-info a:hover{
+  text-decoration: underline;
+  color: brown;
+}
+/* Contact */
+#contact{
+  padding: 5vw 8vw 0 8vw;
+  text-align: center;
+  margin-bottom: 50px;
+}
+#contact h2{
+  font-size: 4rem;
+  font-weight: 600;
+  margin-left: 10px;
+}
+#contact .contact-item{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+#contact iframe{
+  width: 500px;
+  height: 500px;
+  transition: .3s ease-in-out;
+}
+#contact iframe:hover{
+  transform: scale(1.1);
+  transition: .3s ease-in-out;
+}
+#contact .feedback-form{
+  width: 500px;
+  height: 500px;
+  background: #F9F9FF;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 20px;
+}
+#contact .feedback-form input{
+  width: 100%;
+  height: 50px;
+  margin-bottom: 30px;
+  background: white;
+}
+#contact .feedback-form textarea{
+  width: 100%;
+  height: 100px;
+  background: white;
+  border-radius: 10px;
+}
+#contact .feedback-form button{
+  margin-top: 50px;
+  color: white;
+  background-color: black;
+}
+#contact .feedback-form button:hover{
+  color: black;
+  background-color: yellow;
+}
+
+/* Extrenal */
+#extrenal{
+  background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5,4,46,0.7));
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 80vh;
+}
+#extrenal h2{
+  color:rgba(0, 0, 0, 0.765);
+  font-weight: 600;
+  text-decoration: underline;
+}
+#extrenal .social-media img{
+  height: 20px;
+  width: 20px;
+}
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 70px;
+}
+#extrenal .quick-name h2{
+  font-weight: 600;
+  font: 2.2rem;
+  margin-bottom: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+.footer a{
+  text-decoration: none;
+  color:rgba(0, 0, 0, 0.765);
+  font-size: 1.2rem;
+  padding-right: 30px;
+}
+.footer a:hover{
+  color: rgb(122, 81, 4);
+  text-decoration: underline;
+  transition: .2s ease-in-out;
+}
+.social-items, .center-items, .quick-items{
+  padding-bottom: 10px;
+  border-bottom: 1.2px solid rgba(0, 0, 0, 0.765);
+  justify-content: center;
+  margin-right: 30px;
+}
+.quick-items{
+  margin-left: 30px;
+}
+
+.greeting
+{
+    color: #222;
+    background-color: rgb(245, 255, 245);
+    border: 1px solid rgb(210, 231, 210);
+    padding: 1em;
+    margin-top: 93px;
+}
+.greeting span
+{
+    color: rgb(112, 172, 16);
+}
+.dashboard
+{
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+.user-post-area
+{
+    padding: 20px 0;
+}
+
+@media (max-width:1024px){
+  .nav{
+    display: flex;
+    flex-direction: column;
+  }
+}

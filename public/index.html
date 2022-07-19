@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KCC BCA Dept</title>
+    <link rel="shortcut icon" href="./Images/logo.jpg" type="image/x-icon">
+
+    <!-- Load on Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- CSS only Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+
+    <!-- Carousel plugins -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+    <!-- Css Lightbox -->
+    <link rel="stylesheet" href="./lightbox/lightbox.min.css">
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+
+  <body>
+
+    <section id="title">
+      <div class="nav">
+        <img src="./Images/logo.jpg" alt="Logo" class="logo" />
+        <h2 style="font-size: 2rem">Karim City College</h2>
+
+        <ul class="nav-item">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#structure">Structure</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#" id="login"><i class="fa-solid fa-user"></i></a></li>
+        </ul>
+        
+      </div>
+
+      <!-- Login -->
+
+      <div class="login-form">
+
+        <form action="/login" method="post" class="login">
+          <label for="">Enter Email Id</label>
+          <div class="id">
+            <input type="email" placeholder="Enter Mail Id" name="email" id="email" required>
+          </div>
+
+          <label for="">Enter Password</label>
+          <div class="password">
+            <input type="password" placeholder="Enter password" name="password" id="password" maxlength="8" required>
+          </div>
+
+          <a href="#">Forgot Password?</a>
+
+          <div class="button">
+            <a href="#"><button type="submit" class="btn btn-outline-warning" >Login</button></a>
+          </div>
+          <a href="" id="new-user">New User? Click Here!</a>
+        </form>
+      </div>
+        
+        
+      
+      <!-- Sign up -->
+
+      <div class="signup-form">
+
+       <form action="/register" method="post">
+          <label for="" style="color: black;">Enter Full Name</label>
+          <div class="s-name">
+            <input type="text" placeholder="Enter name" name="name" required>
+          </div>
+
+          <label for="" style="color: black;">Enter Email</label>
+          <div class="s-id">
+            <input type="email" placeholder="Enter email" name="email" required>
+          </div>
+
+          <label for="" style="color: black;">Password</label>
+          <div class="s-password">
+            <input type="password" placeholder="Enter password" name="password" required>
+          </div>
+
+          <div class="s-check">
+            <input type="checkbox" name="" id="checkbox" required>I hereby declare details are true.
+          </div>
+
+          <div class="s-button">
+            <button type="submit" class="btn btn-outline-warning">Sign Up</button>
+          </div>
+       </form>
+        
+      </div>
+
+    </section>
+
+    <!-- Home -->
+    <section id="home">
+      <div class="name">
+            <h2>Karim City College</h2>
+            <em style="color: white; margin-bottom: 20px; text-align: center;"><strong>BCA DEPARTMENT</strong></em>
+            <p style="margin-top: 20px;">
+                Established in 1961 by our Founder Father <strong> <u>Late Syed Tafazzul Karim</u> </strong> 
+                with a view to impart education to the weaker section of Jamshedpur
+                specially Muslims, Karim City College has now become a premier
+                educational institution of eastern India.
+            </p>
+            <div class="button">
+                <a href="../Sources/BCA Syllabus Kolhan University.pdf"><button type="button" class="btn btn-outline-warning">Download Syllabus</button></a>
+            </div>
+            <div class="marque">
+                <marquee width="60%" direction="left" height="100px" >Know about admission procedure. <a href="./Images/rules-of-adm.jpeg" target="_blank">Click Here</a></marquee>
+            </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+
+    <section id="features">
+      <div class="fea-logo" data-aos="fade-up">
+        <img src="./Images/features.png" alt="" srcset="">
+        <h2>Perks of KCC</h2>
+      </div>
+      <i class="fa-solid fa-thumbtack" data-aos="fade-up"><em data-aos="fade-up">Affliated to Kolhan University, Chaibasa</em></i>
+        <p data-aos="fade-up"><img src="./Images/ribbon.png" alt="" class="ribbon-img">NCTE, UGC.</p>
+
+        <div class="feature-base" data-aos="fade-up">
+            <div class="feature-box">
+              <img src="./Images/graduated.png" alt="graduated" srcset="" class="features">
+              <a href="../Sources/Scholarship.pdf"><h3>Elite Enviorment</h3></a>
+              <p>So much of options, just at Jamshedpur with an elite facilites to students.</p>
+             
+            </div>
+            <div class="feature-box">
+              <img src="./Images/recruitment.png" alt="graduated" srcset="" class="features">
+              <a href="../Sources/placement.pdf"><h3>Reputated Companies visit.</h3></a>
+              <p>Top IT Companies vizz TCS, Wipro are at your doorstep</p>
+  
+
+            </div>
+            <div class="feature-box">
+              <img src="./Images/library.png" alt="graduated" srcset="" class="features">
+              <a href="../Sources/Library.pdf"><h3>Extensive Library.</h3></a>
+              <p>All in one library and ace reading room making the students feel like home</p>
+             
+            </div>
+            <div class="feature-box">
+              <img src="./Images/world-book-day.png" alt="graduated" srcset="" class="features">
+              <a href="../Sources/sparc.pdf"><h3>SPArC.</h3></a>
+              <p>Organising Communal Harmony week is celebrated. Yearly fest is organised</p>
+
+            </div>
+            <div class="feature-box">
+              <img src="./Images/military.png" alt="graduated" srcset="" class="features">
+              <a href="../Sources/NCC.pdf"><h3>National Cadet Corps.</h3></a>
+              <p>from KCC have been selected in Indian Armed Forces.</p>
+             
+            </div>
+            <div class="feature-box">
+              <img src="./Images/customer.png" alt="graduated" srcset="" class="features">
+              <a href="../Sources/NSS.pdf"><h3>National Service Scheme.</h3></a>
+              <p>actively engaged in community and social services in and around the city</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carousel -->
+
+    <section id="slide">
+      <div id="carouselExampleControls" class="carousel slide" data-ride="false" data-aos="fade-up">
+          <div class="carousel-inner">
+      
+            <div class="carousel-item active">
+              <h2 class="testimonial-text-one">
+                "one of the oldest college in Jamshedpur"
+              </h2>
+            </div>
+           
+            <div class="carousel-item">
+              <em><b class="notes">The Founder's Vision:-</b></em>
+              <h2 class="testimonial-text">
+                "An institution is known not for its building and architectural beauty but because of the grace, dignity, vision and devotion of the people associated with it."
+              </h2>
+              <br>
+              <span><img src="./Images/Founder.gif" alt="" width="80px" height="80px"></span>
+              <br>
+              <b><em style="color: yellowgreen; text-align: center;">~SYED TAFAZZUL KARIM (1886-1965)</em></b>
+            </div>
+      
+            <div class="carousel-item">
+              <em><b class="notes">The Trustee says:-</b></em>
+              <h2 class="testimonial-text">
+                "An institution is known not for its building and architectural beauty but because of the grace, dignity, vision and devotion of the people associated with it."
+              </h2>
+              <br>
+              <span><img src="./Images/trustee.jpg" alt="" width="80px" height="80px"></span>
+              <br>
+              <b><em style="color: yellowgreen;">~SYED ASHFAQUE KARIM</em></b>
+            </div>
+      
+            <div class="carousel-item">
+      
+              <em><b class="notes">Words of Secratary</b></em>
+              <h2 class="testimonial-text">
+                "We are striving to serve the community, the society and the nation to which we belong. We are on a constant journey of service and excellence."
+              </h2>
+              <br>
+              <span><img src="./Images/Secratary.jpeg" alt="" width="80px" height="80px"></span>
+              <br>
+              <b><em style="color: yellowgreen;">~DR. MOHAMMAD ZAKARIA</em></b>
+            </div>
+      
+            <div class="carousel-item">
+              <em><b class="notes">Love from the President:-</b></em>
+              <h2 class="testimonial-text">
+                "I am personally very proud of my 30-35 years association with Karim City College. It is satisfying to see the growth of this institution in conventional and highly techno savy disciplines."
+              </h2>
+              <br>
+              <span><img src="./Images/president.jpg" alt="" width="80px" height="80px"></span>
+              <br>
+              <b><em style="color: yellowgreen;">~AZIZ HUSAIN</em></b>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only"></span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only"></span>
+          </a>
+        </div>
+       
+    </section>
+
+    <!-- Structure -->
+
+    <section id="structure">
+     <div class="fea-logo" data-aos="fade-up">
+      <img src="./Images/search.png" alt="" srcset="">
+      <h2>Details of the BCA </h2> <br>
+     </div>
+     <p data-aos="fade-up">
+      The department of Computer Applications was started in the year 2002. There was urgent need to take a turn to vocational courses in the wake of employment driven education policy of the union government and similar perceptions echoed by University Grants Commission. We admit 60 students in this course every year. The process of admission was through entrance examination followed by interview till 2015- 2016 session. The Kolhan University adopted the method of Centralized admission from 2016- 2017. As it was a new development and the criterion for admission was also changed (Condition of 45% marks in Mathematics was made compulsory for admission) therefore the number of admissions has dropped temporarily. This department has very successfully catered to the needs of the students not only from the state of Jharkhand but also to students from Bihar, Bengal and Odisha.
+    </p>
+      <div class="row" data-aos="fade-up">
+        
+        <div class="col-lg-4 col-md-6 Structure-column">
+          <div class="card">
+            <div class="card-header">
+              <h3>Course Structure</h3>
+            </div>
+            <div class="card-body">
+            <ul>
+              <li>There are <b><em>two semesters in an academic year</em></b> . The entire programme consist of <b><em>6 semesters</em></b> . Each semsters have 5 papers of 100 marks</li>
+              <br>
+              <li>A student shall have to secure minimum <b> <em> 45% marks</em></b> in both end semsters and internal semesters in both theory and practical papers, seperately to pass </li>
+            </ul>
+              </button>
+              </a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-lg-4 col-md-6 Structure-column">
+          <div class="card">
+            <div class="card-header">
+              <h3 >Exam Structure</h3>
+            </div>
+            <div class="card-body">
+              <ul>
+                <li>The internal semesters in theory and practical will be of <b><em>hour duration carrying 30 marks(25 marks of Unit Test and 5 marks for attendance) for each paper.</em></b> </li>
+                <br>
+                <li>A student has to maintains <b><em>75% attendance seperately in every subject to qualify for End-Semesters.</em></b></li>
+              </ul>
+              <br>
+              </a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-lg-4 col-md-6 Structure-column">
+          <div class="card">
+            <div class="card-header">
+              <h3>Activites</h3>
+            </div>
+            <div class="card-body">
+              <ul>
+                <li><b><em> Seminars</em></b> are organised in the department on regular basis where repute from different institution of Jharkhand are invited. It helps students to in assesing their status in real industry</li>
+                <br>
+                <li><b><em>Workshops</em></b> are a ready solution for our budding computer professional to equip them with latest changes in the tech and services associated to it.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+
+    <section id="gallery">
+      <div class="fea-logo" data-aos="fade-up">
+        <img src="./Images/gallery.png" alt="" srcset="">
+        <h2>Gallery</h2>
+       </div>
+     
+      <div class="gallery-image" data-aos="fade-up">
+        <a href="./Images/gallery/teachers day 1.jpeg"  data-lightbox="mygallery"><img src="./Images/gallery/building.jpg" alt="teachers day 1" srcset=""></a>
+        <a href="./Images/gallery/teachers day 1.jpeg" data-lightbox="mygallery"><img src="./Images/gallery/teachers day 1.jpeg" alt="teachers day 1" srcset=""></a>
+        <a href="./Images/gallery/teachers day 2.jpeg" data-lightbox="mygallery"><img src="./Images/gallery/teachers day 2.jpeg" alt="teachers day 2" srcset=""></a>
+        <a href="./Images/gallery/teachers day 3.jpeg" data-lightbox="mygallery"><img src="./Images/gallery/teachers day 3.jpeg" alt="teachers day 3" srcset=""></a>
+        <a href="./Images/gallery/teachers day 4.jpeg" data-lightbox="mygallery"><img src="./Images/gallery/teachers day 4.jpeg" alt="teachers day 4" srcset=""></a>
+        <a href="./Images/gallery/teachers day 5.jpeg" data-lightbox="mygallery"><img src="./Images/gallery/teachers day 5.jpeg" alt="teachers day 5" srcset=""></a>
+        <a href="./Images/gallery/teachers day 6.jpeg" data-lightbox="mygallery"><img src="./Images/gallery/teachers day 6.jpeg" alt="teachers day 6" srcset=""></a>
+        <a href="./Images/gallery/Communal Harmony.jpeg" data-lightbox="mygallery"><img src="./Images/gallery/Communal Harmony.jpeg" alt="Communal Harmony" srcset=""></a>
+        <a href="./Images/gallery/gallery 1.jpg" data-lightbox="mygallery"><img src="./Images/gallery/gallery 1.jpg" alt="Governing Body 1" srcset=""></a>
+        <a href="./Images/gallery/gallery 2.jpg" data-lightbox="mygallery"><img src="./Images/gallery/gallery 2.jpg" alt="Governing Body 2" srcset=""></a>
+        <a href="./Images/gallery/gallery 3.jpg" data-lightbox="mygallery"><img src="./Images/gallery/gallery 3.jpg" alt="Building of KCC" srcset=""></a>
+        <a href="./Images/gallery/faculty.jpg" data-lightbox="mygallery"><img src="./Images/gallery/faculty.jpg" alt="teachers day 1" srcset=""></a>
+        <a href="./Images/gallery/Faculty2.jpg" data-lightbox="mygallery"><img src="./Images/gallery/Faculty2.jpg" alt="teachers day 1" srcset=""></a>
+        <a href="./Images/gallery/celeb2.webp" data-lightbox="mygallery"><img src="./Images/gallery/celeb2.webp" alt="teachers day 1" srcset=""></a>
+        <a href="./Images/gallery/celeb3.webp" data-lightbox="mygallery"><img src="./Images/gallery/celeb3.webp" alt="teachers day 1" srcset=""></a>
+        <a href="./Images/gallery/celeb4.webp" data-lightbox="mygallery"><img src="./Images/gallery/celeb4.webp" alt="teachers day 1" srcset=""></a>
+      </div>
+    </section>
+
+<!-- reviews -->
+
+    <section id="reviews">
+      <div class="fea-logo" data-aos="fade-up">
+        <img src="./Images/review.png" alt="" srcset="">
+        <h2>Reviews</h2>
+      </div>
+
+      <div class="person-box" data-aos="fade-up">
+
+        <div class="profiles">
+
+            <img src="./Images/anonymous.png" alt="student" height="50px" width="50px" >
+            <p>Nice faculty, there is a lot of faculty by my count it's about 10-12 faculty in BCA and the Students to faculty ratio may be about 1:6. All faculty have nice qualifications. Due to Covid, many exams got cancelled.
+              <br>
+            <em>~Anonymous</em>
+        </div>
+
+        <div class="profiles">
+          <img src="./Images/girl.png" alt="student"height="50px" width="50px">
+          <p>It's a semi-government college, a very low fees structure, new technologies adopted by the college, a disciplined college, well-managed communities for the co-curriculum activities, working staffs are very helpful, teachers with good behaviour and a uniform system of the college. Due to corona exam was conducted late</p>
+          <em>~Tarini</em>
+        </div>
+
+        <div class="profiles">
+          <img src="./Images/anonymous.png" alt="student"height="50px" width="50px">
+          <p>I have chosen BCA DEPARTMENT because there is a huge demand in its field. Faculty is average there are many colleges with better faculty than this. They are outdated with the technology student have to tell this will be like this but one thing is good there are only 60 students in a batch.</p>
+          <em>~Anonymous</em>
+        </div>
+
+        <div class="profiles">
+          <img src="./Images/boy.png" alt="student"height="50px" width="50px">
+          <p>I choose this course because I wanna become a SDE in a MNC. The student ratio is much bigger like 7:8 which is good for any college. The qualifications of the faculty are great and impressive for all the students and the teaching method is nice and good.</p>
+          <em>~Ashish anurag</em>
+        </div>
+
+        <div class="profiles">
+          <img src="./Images/girl.png" alt="student"height="50px" width="50px">
+          <p>My experience of curriculum courses is a bit good. The faculty members were good and friendly enough. I choose BCA. Our faculty includes asgar sir, Sabah Teacher and many more experienced ones. There are 60 students in each course. Our exams were not conducted every 6 months.</p>
+          <em>~Shreya Ghosh</em>
+        </div>
+
+        <div class="profiles">
+          <img src="./Images/girl.png" alt="student"height="50px" width="50px">
+          <p> Their is no hostel provided by the college but the students can stay at nearby PG rooms which they can get at very low costs such as 2000 per month. Mess is good and for the students residing at pg they can order food from outside which cost 2k-5k per month </p>
+          <em>~Anjani Singh</em>
+        </div>
+
+        <div class="profiles">
+          <img src="./Images/anonymous.png" alt="student"height="50px" width="50px">
+          <p> Best infrastructure and library is very huge. Many books and novels and magazine are kept here which can be accessed by anyone inside the college. Wifi is enabled throughout the campus. The labs are best here with Fully new technologies and all machine works quite well.</p>
+            <em>~Anonymous</em>
+        </div>
+
+        <div class="profiles">
+          <img src="./Images/boy.png" alt="student"height="50px" width="50px">
+          <p> The college has a good placement cell, and overall, it is superb. The highest salary package offered is 6 LPA. The best-recruiting companies in our college are Tata Motors, Wipro, Aditya Birla, HCL, Amazon, etc. HR and manager roles are offered. </p>
+          <em>~Tarak</em>
+      </div>
+
+        <div class="profiles">
+          <img src="./Images/boy.png" alt="student"height="50px" width="50px">
+          <p>  The total fee is around 1 lac for 3 years. For BCA fee is very nominal and cost to study is very less compared to other colleges. There are many scholarship for top scorers and there is a scholarship for the scheme from the jharkhand government which can be easily availed in our college</p>
+          <em>~Sourav</em>
+        </div> 
+      </div>
+
+      <div class="more-info">
+        <a href="https://collegedunia.com/college/2359-karim-city-college-kcc-jamshedpur" target="_blank"><em>For more reviews click me</em></a>
+      </div>
+
+    </section>
+
+    <!-- contact -->
+
+    <section id="contact">
+      <div class="fea-logo" data-aos="fade-up">
+        <img src="./Images/review.png" alt="" srcset="">
+        <h2>Contact Us</h2> <br>
+      </div>
+      <em style="background: #F9F9FF;" data-aos="fade-up">Call us at +91 657-2431778, 2423863, 2440206, 2437386</em>
+       <div class="contact-item" data-aos="fade-up">
+          <div class="loctaion">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.0407623947194!2d86.1972713141461!3d22.800953430297934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f5e3120cac91c5%3A0x73c6bf11a0a0f479!2sKarim%20City%20College!5e0!3m2!1sen!2sin!4v1655272389220!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+          <div class="feedback-form">
+            <form action="" name = "myform" class="feedback-forms">
+              <input type="text" placeholder="Enter Your name" class="feedback-form" required name="name">
+          
+              <input type="email" placeholder="Enter Your Mail Id" class="feedback-form" required id="Mail"> 
+              
+              <input type="number" placeholder="Enter Your Phone number" class="feedback-form" required id="phone">
+
+              <textarea name="" id=""  rows="5" placeholder="Message"></textarea required><br>
+                
+              <button type="button" class="btn btn-lg btn-outline-dark download-button">Submit</button>
+            </form>
+          </div>
+          
+       </div>
+    </section>
+
+    <!-- Extrenal Links -->
+
+    <section id="extrenal">
+      <footer>
+        <div class="footer" data-aos="fade-up">
+
+          <div class="quick-links">
+              <div class="quick-name">
+                <h2>Quick Links</h2>
+              </div>
+              <div class="quick-items">
+                <a href="../Sources/LIST OF COURSES.pdf" target="_parent"> <img src="./Images/Social media/right.png" alt="" srcset="" height="20px" width="20px"> Courses List</a>
+              </div>
+              <div class="quick-items">
+                <a href="#contact" target="_parent"><img src="./Images/Social media/right.png" alt="" srcset="" height="20px" width="20px">Contact Us</a>
+              </div>
+              <div class="quick-items">
+                <a href=" https://kolhanuniversity.ac.in/" target="_blank"><img src="./Images/Social media/right.png" alt="" srcset="" height="20px" width="20px">Kolhan University, Chaibasa</a>
+              </div>
+              <div class="quick-items">
+                <a href="https://www.ugc.ac.in/#" target="_blank"><img src="./Images/Social media/right.png" alt="" srcset="" height="20px" width="20px">UGC, New Delhi</a>
+              </div>
+              <div class="quick-items">
+                <a href="http://www.naac.gov.in/index.php/en/" target="_blank"><img src="./Images/Social media/right.png" alt="" srcset="" height="20px" width="20px">NAAC</a>
+              </div>
+              <div class="quick-items">
+                <a href="https://www.education.gov.in/en/rusa" target="_blank"><img src="./Images/Social media/right.png" alt="" srcset="" height="20px" width="20px">RUSA</a>
+              </div>
+          </div>
+
+          <div class="centres">
+            <div class="quick-name">
+            <h2> Centers</h2>
+            </div>
+            <div class="center-items">
+              <a href="../Sources/National Testing Service.pdf" target="_blank"><img src="./Images/Social media/right.png" alt="" srcset="" height="20px" width="20px">NTS</a>
+            </div>
+            <div class="center-items">
+              <a href="../Sources/UGC.pdf" target="_blank"><img src="./Images/Social media/right.png" alt="" srcset="" height="20px" width="20px">UGC NRC</a>
+            </div>
+            <div class="center-items">
+              <a href="../Sources/Centre for Distance Education.pdf" target="_blank"><img src="./Images/Social media/right.png" alt="" srcset="" height="20px" width="20px">Centre for Distance Education</a>
+            </div>
+            <div class="center-items">
+              <a href="../Sources/Language Resource Centre.pdf" target="_blank"><img src="./Images/Social media/right.png" alt="" srcset="" height="20px" width="20px">Language Resource Centre</a>
+            </div>
+            <div class="center-items">
+              <a href="../Sources/Centre for Academic Development.pdf" target="_blank"><img src="./Images/Social media/right.png" alt="" srcset="" height="20px" width="20px">Centre for Academic Development</a>
+            </div>
+          </div>
+  
+          <div class="social-media">
+            <div class="quick-name">
+              <h2>Connect with Us</h2>
+             </div>
+            <div class="social-items">
+              <a href="https://twitter.com/karimcity" target="_blank"> <img src="./Images/Social media/twitter.png" alt="" srcset=""> Twitter</a>
+            </div>
+            <div class="social-items">
+              <a href="https://www.facebook.com/KarimCityCollege" target="_blank"><img src="./Images/Social media/facebook.png" alt="" srcset=""></i> Facebook</a>
+            </div>
+            <div class="social-items">
+              <a href="https://www.youtube.com/user/karimcitycollege" target="_blank"><img src="./Images/Social media/youtube.png" alt="" srcset=""></i> Youtube</a>
+            </div>
+            <div class="social-items">
+              <a href="it_ca@karimcitycollege.org" target="_blank"><img src="./Images/Social media/email.png" alt="" srcset=""></i> it_ca@karimcitycollege.org</a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="copyright">
+          <p style="margin-top: 50px; text-align: center; font-weight: 600; text-decoration: underline;">All the Right belong to Himadri, Sagar, Sourav.</p>
+        </div>
+        
+      </footer>
+    </section>
+
+
+
+ 
+
+    <!-- JavaScript Bundle with Popper -->
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Lighbox JS -->
+
+    <script src="./lightbox/lightbox-plus-jquery.min.js"></script>
+
+    <!-- JavaScript Bundle with Popper -->
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 300,
+        duration: 1000 
+      });
+    </script>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

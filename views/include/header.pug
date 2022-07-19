@@ -1,0 +1,41 @@
+//- nav 
+//-     ul 
+//-         block links
+//-         li 
+//-             a(href="/" style="text-decoration: none; color: black; list-style-type: none;") Karim City Colleg
+
+
+//- nav.nav
+//-     ul.nav-item
+//-         block links
+//-         nav.navbar.navbar-expand-lg.navbar-light.bg-light
+//-         a.navbar-brand(href='#') Karim City College 
+//-         button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+//-             span.navbar-toggler-icon
+        
+//-         .collapse.navbar-collapse(id='navbarSupportedContent')
+//-             ul.navbar-nav.mr-auto
+//-             li.nav-item.active
+//-                 a.nav-link(href='/') Home
+//-             li.nav-item
+//-                 a.nav-link(href='/food-courts') Download Question Papers 
+//-             li.nav-item
+//-                 a.nav-link(href='/parking') Pay Semester fees
+//-             ul.navbar-nav.float-right
+//-             li.nav-item
+//-                  a(href="/loggout" style="text-decoration: none; color: black; list-style-type: none;")  LogOut
+//-             li.nav-item.dropdown
+//-                 a.nav-link.dropdown-toggle(id='navbarDropdownMenuLink', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Accounts
+//-                 .dropdown-menu(aria-labelledby='navbarDropdownMenuLink')
+
+.nav 
+    h2(style="font-size: 2rem; margin-left: -10px") Karim City College 
+    ul.nav-item(style= "margin-right: 59px") 
+        li
+            a(href="/") Home
+        li 
+            a(href="#") Question Paper 
+        li 
+            a(href="#") Pay Fees  
+        li 
+            a(href="/loggout") LogOut
