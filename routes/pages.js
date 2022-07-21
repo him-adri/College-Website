@@ -1,7 +1,6 @@
 const express = require('express');
 const User = require('../core/User');
 const router = express.Router();
-
 const user = new User();
 
 // get index page
@@ -56,7 +55,6 @@ router.post('/register', (req, res, next) => {
             user.find(lastId, function(result){
                 req.session.user = result;
                 req.session.opp = 0
-                res.redirect('/home');
             });
             // res.send("Registerd as: "+result.name);
         }else{
@@ -64,7 +62,6 @@ router.post('/register', (req, res, next) => {
         }
     });
 });
-
 // logout
 router.get('/loggout', (req, res, next) => {
     // Check if the session is exist

@@ -113,13 +113,23 @@
           </div>
 
           <div class="s-button">
-            <button type="submit" class="btn btn-outline-warning">Sign Up</button>
+            <a href="#"><button type="submit" class="btn btn-outline-warning" id="Signup-alert" onclick="popup()">Sign Up</button></a>
           </div>
        </form>
         
       </div>
 
     </section>
+
+    <div class="popup" id="popupid">
+      <div class="overlay"></div>
+      <div class="content">
+        <div class="close-btn" onclick="popup()">&times;</div>
+        <p>You are a registered Student. 
+          Now Login
+        </p>
+      </div>
+    </div>
 
     <!-- Home -->
     <section id="home">
@@ -159,7 +169,7 @@
              
             </div>
             <div class="feature-box">
-              <img src="./Images/recruitment.png" alt="graduated" srcset="" class="features">
+              <img src="./Images/recruitment (1).png" alt="graduated" srcset="" class="features">
               <a href="../Sources/placement.pdf"><h3>Reputated Companies visit.</h3></a>
               <p>Top IT Companies vizz TCS, Wipro are at your doorstep</p>
   
