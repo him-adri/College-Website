@@ -1,4 +1,5 @@
 const express = require('express');
+const fileUpload = require('express-fileupload');
 const path = require('path');
 var cons = require('consolidate');
 const session = require('express-session');
@@ -14,6 +15,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 // template engine
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
+
+// file upload
+app.use(fileUpload());
+
 
 // app.engine('html', cons.swig)
 // app.set('views', path.join(__dirname, 'views'));

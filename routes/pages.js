@@ -62,6 +62,7 @@ router.post('/register', (req, res, next) => {
         }
     });
 });
+
 // logout
 router.get('/loggout', (req, res, next) => {
     // Check if the session is exist
