@@ -212,7 +212,7 @@ html{
     align-items: center;
     text-align: center;
     padding-top: 40px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 #home h2{
     color: white;
@@ -254,6 +254,79 @@ html{
 }
 .marque a:hover{
     color: yellow;
+}
+/* Appply Now */
+
+#apply{
+  padding: 5vw 8vw 0 8vw;
+  text-align: center;
+  margin-bottom: 70px;
+  background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5,4,46,0.7)), url(../Images/computer-lab-hero.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 70px;
+  margin: 30px;
+}
+#apply h6{
+  font-family: cursive;
+  font-size: 2.3rem;
+  font-weight: 200;
+  text-decoration: underline;
+  color: rgba(243, 243, 243, 0.984);
+}
+
+#apply .apply-item{
+  margin-top: 50px;
+  margin-left: 250px;
+}
+#apply p{
+  width: 500px;
+  height: 500px;
+  color: white;
+}
+#apply .apply-form{
+  width: 500px;
+  height: 550px;
+  background: #F9F9FF;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: rgba(34, 34, 34, 0.703);
+
+}
+#apply .apply-form input{
+  width: 100%;
+  height: 43px;
+  margin-bottom: 20px;
+  background: white;
+  border-radius: 10px;
+}
+#apply span{
+  text-align: start;
+  color: white;
+}
+#apply select{
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+  background: white;
+  border-radius: 10px;
+}
+#apply .apply-form textarea{
+  width: 100%;
+  height: 100px;
+  background: white;
+  border-radius: 10px;
+}
+#apply .apply-form button{
+  margin-top: 30px;
+  color: white;
+  background-color: black;
+}
+#apply .apply-form button:hover{
+  color: black;
+  background-color: yellow;
 }
 
 /* Features */
