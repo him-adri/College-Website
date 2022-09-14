@@ -14,6 +14,7 @@ $(document).ready(function () {
   });
   var form2 = $(".signup-form");
   var status2 = false;
+  var status3 = false;
   $("#new-user").click(function (event) {
     event.preventDefault();
     if (status2 == false) {
@@ -25,32 +26,36 @@ $(document).ready(function () {
       status2 = false;
     }
   });
+  $("#applybtn").click(function(event){
+    event.preventDefault();
+    if(status3 == false){
+      form2.fadeIn();
+      status3 = true
+    }else{
+      form2.fadeOut();
+      status3 = false;
+    }
+  })
 });
-
-function popup() {
-  document.getElementById("popupid").classList.toggle("active");
+function popupSignup(){
+  document.getElementById("popupid2").classList.toggle("active");
 }
+function signupValid() {
+  var name  = document.forms["signupForm"]["name"].value;
+  var email = document.forms["signupForm"]["email"].value;
+  var pswd = document.forms["signupForm"]["password"].value;
 
-function applyFormValid() {
-  var a = document.forms["applyform"]["name"].value;
-  var b = document.forms["applyform"]["gender"].value;
-  var c = document.forms["applyform"]["mail"].value;
-  var d = document.forms["applyform"]["phnum"].value;
-
-  var phnumLen = d.toString().length;
-  var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-
-  if (a == null || a == "") {
-    document.getElementById("para1").innerHTML = "Name is empty!";
-    return false;
-  } else if (b == null || b == "") {
-    document.getElementById("para1").innerHTML = "Gender is empty!";
-    return false;
-  } else if (c == null || c == "" || c.value != mailformat) {
-    document.getElementById("para1").innerHTML = "Mail is Invalid!";
-    return false;
-  } else if (d == null || d == "" || phnumLen > 10 || phnumLen < 10) {
-    document.getElementById("para1").innerHTML = "Phone Number is Invalid!";
-    return false;
+  if(name == null || name == ""){
+    document.getElementById("para2").innerHTML = "name is Empty!"
+  }
+  else if(email == null || email == ""){
+    document.getElementById("para2").innerHTML = "email is Empty!"
+  }
+  else if(pswd == null || pswd == ""){
+    document.getElementById("para2").innerHTML = "Password is Empty!"
+  }
+  else{
+    popupSignup();
   }
 }
+

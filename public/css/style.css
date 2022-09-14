@@ -18,6 +18,19 @@ html{
   height: 50px;
   width: 50px;
 }
+.heading-name{
+  border-bottom: 2px black dashed;
+  text-shadow: 0 0 1px rgba(40,54,95,0.1);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number]{
+  -moz-appearance: textfield;
+}
+
 /* Title */
 .nav {
   display: flex;
@@ -112,9 +125,13 @@ html{
  
 }
 .login-form input{
-  border: 1px solid black;
+  background: transparent;
+  outline: none;
+  border: none;
   margin-left: 50px;
+  border-bottom: 2px black solid ;
 }
+
 .login-form button{
   margin-top: 20px;
   margin-bottom: 20px;
@@ -137,6 +154,7 @@ html{
 }
 .login-form a:hover{
  text-decoration: underline;
+ color:rgb(13, 1, 1);;
 }
 .login img{
   margin-right: 5px;
@@ -144,7 +162,7 @@ html{
 }
 
 .signup-form{
-  height: auto;
+  height: 500px;
   width: 260px;
   position: absolute;
   right: 10px;
@@ -152,10 +170,50 @@ html{
    border: 2px solid black;
    position: fixed;
    background: rgba(58, 201, 58, 0.71);
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
   display: none;
   z-index: 1000000;
+}
+.signup-form form{
+  width: 500px;
+  height: 480px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align:justify;
+}
+.signup-form label,
+.login-form label{
+ font-weight: bolder;
+}
+.signup-form input{
+  background: transparent;
+  margin: 3px;
+  outline: none;
+  color: black;
+  border: none;
+  border-bottom: 2px black solid ;
+}
+.signup-form input:focus,
+.login-form input:focus{
+  border-bottom: 1px goldenrod solid ;
+  box-shadow: 0 0 10px #26bf47;
+  transform: scale(1);
+}
+.signup-form input:hover,
+.login-form input:hover{
+  border-bottom: 2px goldenrod solid ;
+}
+::-webkit-input-placeholder { /* Edge */
+  color: rgb(27, 26, 26);
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: rgb(27, 26, 26);
+}
+
+::placeholder {
+  color: rgb(27, 26, 26);
 }
 .signup-form button{
   margin-top: 20px;
@@ -180,19 +238,6 @@ html{
    margin-top: 10px;
   color: black;
   margin-left: 50px;
-}
-#checkbox{
-  margin-right: 5px;
-  font-size: 14px;
-}
-
-.s-check{
-  font-size: 14px;
-  color: black;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: row;
 }
 .signup-form button:hover{
   background-color:yellow;
@@ -255,86 +300,54 @@ html{
 .marque a:hover{
     color: yellow;
 }
-/* Appply Now */
 
-#apply{
+/* Elgibility Criteria */
+
+#eligible{
   padding: 5vw 8vw 0 8vw;
-  text-align: center;
-  margin-bottom: 70px;
-  background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5,4,46,0.7)), url(../Images/computer-lab-hero.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding-bottom: 70px;
-  margin: 30px;
+  text-align: center;;
 }
-#apply h6{
-  font-family: cursive;
-  font-size: 2.3rem;
-  font-weight: 200;
-  text-decoration: underline;
-  color: rgba(243, 243, 243, 0.984);
+#eligible h2{
+  font-size: 4rem;
+  font-weight: 600;
 }
-
-#apply .apply-item{
+.eligible{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#eligible .card{
   margin-top: 50px;
-  margin-left: 250px;
-}
-#apply p{
-  width: 500px;
-  height: 500px;
-  color: white;
-}
-#apply .apply-form{
-  width: 500px;
-  height: 550px;
+  box-shadow: inset 5px 5px 15px #ffffff,
+                      5px 5px 15px black;
+  border-radius: 10px;
   background: #F9F9FF;
-  border: 1px solid black;
-  border-radius: 10px;
-  padding: 20px;
-  background-color: rgba(34, 34, 34, 0.703);
-
-}
-#apply .apply-form input{
-  width: 100%;
-  height: 43px;
-  margin-bottom: 20px;
-  background: white;
-  border-radius: 10px;
-}
-#apply span{
+  margin-bottom: 50px;
+  transition: .4s ease-in-out;
   text-align: start;
-  color: white;
+  cursor: pointer;
 }
-#apply select{
-  width: 100%;
+#eligible .card:hover{
+  transform: scale(1.1);
+  transition: .4s ease-in-out;
+}
+#eligible button{
+  width: 200px;
   height: 50px;
-  margin-bottom: 20px;
-  background: white;
+  margin-left: 20px;
+  margin-top: 10px;
+  transition: 0.3s ease;
+  font-size: 20px;
+  border:1px solid black;
   border-radius: 10px;
+  color: black
 }
-#apply .apply-form textarea{
-  width: 100%;
-  height: 100px;
-  background: white;
-  border-radius: 10px;
-}
-#apply .apply-form button{
-  margin-top: 30px;
+#eligible button:hover{
+  background-color: green;
   color: white;
-  background-color: black;
+  border: 2px gold solid ;
 }
-#apply .apply-form button:hover{
-  color: black;
-  background-color: yellow;
-}
-
 /* Features */
-
-.ribbon-img{
-    width: 16px;
-    height: 16px;
-}
 
 #features{
     padding: 5vw 8vw 0 8vw;
@@ -401,52 +414,12 @@ html{
 #features .feature-box img{
   margin-top: 20px;
 }
-/* Carousel */
-#slide{
-  padding: 5vw 8vw 0 8vw;
-    margin-bottom: 120px;
-}
-.carousel-inner{
-  background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5,4,46,0.7)), url(../Images/Building\ View\ of\ Karim\ City\ College\ edited.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 5% 10%;
-}
-.carousel-item {
-  padding: 7% 15%;
-  height:100%;
-  height: 100%;
-}
-.testimonial-text{
-  color:white;
-  font-size: 1.5rem;
-  margin-top: 10%;
-}
-.testimonial-text-one{
-  font-size: 3.5rem;
-  margin-top: 10%;
-  color:white;
-  border-radius: 10px;
-}
-.testimonial-text-two{
-  font-size: 1.3rem;
-  margin-top: 10%;
-  color: whitesmoke;
-  text-align: left;
-}
-.testimonial-img {
-  width: 20%;
-  margin-top: 50px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.notes{
-  font-size: 34px;
-  color: whitesmoke;
-  font-size: 2.5rem;
-  text-decoration: underline;
+
+#text-area-features{
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  background-color: #222;
+  border: 1px solid gold;
 }
 
 /* Structure */
@@ -480,6 +453,22 @@ html{
   transform: scale(1.1);
   transition: .4s ease-in-out;
 }
+#structure button{
+  width: 200px;
+  height: 50px;
+  margin-left: 20px;
+  margin-top: 3px;
+  transition: 0.3s ease;
+  font-size: 20px;
+  border:1px solid black;
+  border-radius: 10px;
+  color: black
+}
+#structure button:hover{
+  background-color: green;
+  color: white;
+  border: 2px gold solid ;
+}
 
 /* Gallery */
 
@@ -509,6 +498,9 @@ html{
   transform: scale(1.1);
   
 }
+
+      
+
 /* Reviews */
 #reviews h2{
   font-size: 4rem;
@@ -562,14 +554,7 @@ html{
   font-weight: bold;
   padding: 20px;
 }
-#reviews .more-info{
-  text-align: right;
-  padding-top: 30px;
-}
-#reviews .more-info a{
-  text-decoration: none;
-  color: black;
-}
+
 #reviews .more-info a:hover{
   text-decoration: underline;
   color: brown;
@@ -605,20 +590,35 @@ html{
   height: 500px;
   background: #F9F9FF;
   border: 1px solid black;
-  border-radius: 10px;
   padding: 20px;
 }
-#contact .feedback-form input{
+#contact .feedback-form input,
+#contact .feedback-form textarea{
   width: 100%;
   height: 50px;
   margin-bottom: 30px;
-  background: white;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid lightsalmon;
+}
+#contact .feedback-form textarea{
+  padding: 20px;
+}
+#contact .feedback-form input:hover,
+#contact .feedback-form textarea:hover,
+#contact .feedback-form input:focus,
+#contact .feedback-form textarea:focus{
+  border-bottom: 2px solid rgb(113, 52, 28);
+  box-shadow: 0 1px 4px #26bf47;
 }
 #contact .feedback-form textarea{
   width: 100%;
   height: 100px;
-  background: white;
-  border-radius: 10px;
+}
+#contact .feedback-form textarea::placeholder{
+  text-align: start;
+  padding: 20px;
 }
 #contact .feedback-form button{
   margin-top: 50px;
@@ -682,7 +682,8 @@ html{
   margin-left: 30px;
 }
 
-.popup .overlay{
+
+ .popup2 .overlay{
   position: fixed;
   top:0px;
   left: 0px;
@@ -692,7 +693,7 @@ html{
   z-index: 2;
   display: none;
 }
-.popup .content{
+.popup2 .content{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -705,7 +706,7 @@ html{
   padding: 20px;
   box-sizing: border-box;
 }
-.popup .close-btn{
+.popup2 .close-btn{
   position: absolute;
   right: 20px;
   top: 20px;
@@ -720,44 +721,52 @@ html{
   border-radius: 50%;
   cursor: pointer;
 }
-.popup.active .overlay{
+.popup2.active .overlay{
   display: block;
 }
-.popup p{
+.popup2 p{
   text-align: center;
   font-size: 1rem;
 }
-.popup.active .content{
+.popup2.active .content{
   transition: all 300ms ease-in-out;
   transform: translate(-50%, -50%) scale(1);
 
 }
+.more-info{
+  text-align: right;
+  padding-top: 30px;
+}
+.more-info a{
+  text-decoration: none;
+  color: black;
+}
+/* Home.pug Styles */
 .greeting
 {
-    color: #222;
-    background-color: rgb(245, 255, 245);
+    color: whitesmoke;
+    background-color: rgba(40, 99, 40, 0.742);
     border: 1px solid rgb(210, 231, 210);
-    padding: 1em;
-    margin-top: 93px;
+    padding: 20px;
+    margin-top: 80px;
+    position: absolute; 
+    left: 33%;
 }
 .greeting span
 {
-    color: rgb(112, 172, 16);
+    color:whitesmoke;
+    text-decoration: underline white;
+}
+.greeting span:hover{
+  color: rgb(92, 143, 9);
 }
 .dashboard
 {
-    padding: 20px;
+    padding: 10px;
     border: 1px solid #ccc;
     background-color: #fff;
 }
 .user-post-area
 {
     padding: 20px 0;
-}
-
-@media (max-width:1024px){
-  .nav{
-    display: flex;
-    flex-direction: column;
-  }
 }

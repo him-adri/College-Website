@@ -42,6 +42,7 @@
 
     <!-- CSS link -->
     <link rel="stylesheet" href="./css/style.css">
+    
   </head>
 
   <body>
@@ -82,7 +83,7 @@
           <div class="button">
             <a href="#"><button type="submit" class="btn btn-outline-warning" >Login</button></a>
           </div>
-          <a href="" id="new-user">New User? Click Here!</a>
+          <a href="./Signup.html" id="new-user">Apply Now in the Course</a>
         </form>
       </div>
         
@@ -90,9 +91,13 @@
       
       <!-- Sign up -->
 
-      <div class="signup-form">
+      <div class="signup-form" id="signup">
 
-       <form action="/register" method="post">
+       <form action="/register" method="post" name="signupForm">
+        <p style="color: black; font-size: 30px;font-weight: bolder; font-family:'Times New Roman', Times, serif">Register Form </p>
+
+          <span class="para2" style="font-family: monospace; color:aliceblue"></span>
+
           <label for="" style="color: black;">Enter Full Name</label>
           <div class="s-name">
             <input type="text" placeholder="Enter name" name="name" required>
@@ -108,25 +113,49 @@
             <input type="password" placeholder="Enter password" name="password" required>
           </div>
 
-          <div class="s-check">
-            <input type="checkbox" name="" id="checkbox" required>I hereby declare details are true.
+           <label for="" style="color: black;">Father's Name</label>
+          <div class="s-fathers">
+            <input type="text" placeholder="Father's Name" name="FName" required>
+          </div>
+
+          <label for="" style="color: black;">Mother's Name</label>
+          <div class="s-mothers">
+            <input type="text" placeholder="Enter Mother's Name" name="MName" required>
+          </div>
+
+          <label for="" style="color: black;">Phone Number</label>
+          <div class="s-phone">
+            <input type="number" placeholder="Enter phone number" name="phno" required>
+          </div>
+
+          <label for="" style="color: black;">Aadhar Number</label>
+          <div class="s-aadhar">
+            <input type="number" placeholder="Enter Aadhar Number" name="adno" required>
+          </div>
+
+          <label for="" style="color: black;">Address</label>
+          <div class="s-password">
+            <input type="text" placeholder="Enter Address" name="address" required>
           </div>
 
           <div class="s-button">
-            <a href="#"><button type="submit" class="btn btn-outline-warning" id="Signup-alert" onclick="popup()">Sign Up</button></a>
+            <a href="#"><button type="submit" class="btn btn-outline-warning" id="Signup-alert" onclick="signupValid() ">Sign Up</button></a>
           </div>
        </form>
         
-      </div>
+      </div> 
 
     </section>
 
-    <div class="popup" id="popupid">
+    
+
+    <div class="popup2" id="popupid2">
       <div class="overlay"></div>
       <div class="content">
-        <div class="close-btn" onclick="popup()">&times;</div>
-        <p>You are a registered Student. 
-          Now Login
+        <div class="close-btn" onclick="popupSignup()">&times;</div>
+        <p>
+          <img src="./Images/congratulation.png" alt="" height="100px" width="100px"> 
+          <br> <span style="font-family: cursive; font-size: 20px ;">Thank You for registering for BCA course.</span>
         </p>
       </div>
     </div>
@@ -143,83 +172,84 @@
                 educational institution of eastern India.
             </p>
             <div class="button">
-                <a href="./Sources/BCA Syllabus Kolhan University.pdf" target="_blank"><button type="button" class="btn btn-outline-warning">Download Syllabus</button></a>
+                <a href="#signup"><button type="button" class="btn btn-outline-warning" id="applybtn">Apply Now </button></a>
             </div>
             <div class="marque">
-                <marquee width="60%" direction="left" height="100px" >Know about admission procedure. <a href="./Images/rules-of-adm.jpeg" target="_blank">Click Here</a></marquee>
+                <marquee width="60%" direction="left" height="100px" class="one-marque">Know about admission procedure. <a href="./Images/rules-of-adm.jpeg" target="_blank">Click Here | </a>
+                  Know about the Eligibilty Criteria. <a href="#eligible">Click Here </a>
+                </marquee>
             </div>
       </div>
     </section>
 
-    <!-- APlly Now Option -->
-    <section id="apply" data-aos="fade-up">
-      <div class="apply-class" >
-
-         <div class="apply-item" id="applymain-id">
-            <div class="apply-form">
-              <form action="" name = "applyform" class="">
-                <h6>Apply Now</h6>
-
-                <span id="para1" style="font-family: monospace; color:aliceblue"></span>
-
-                <input type="text" placeholder="Enter Name *" class="apply-form" required name="name" id = "name">
-                <br>
-
-                <input type="text" name="gender"class="apply-form" placeholder="Specify Gender *">
-                <br>
-
-                <input type="email" placeholder="Enter Your Mail Id *" name="mail" class="apply-form" required id="Mail"> 
-                
-                <input type="number" placeholder="Enter Your Phone number *" class="apply-form" required id="phone" maxlength="10" id="=phno" name="phnum">
-  
-                <textarea name="" id=""  rows="5" placeholder="Say About Yourself"></textarea required><br>
-                  
-                <button type="button" class="btn btn-lg btn-outline-dark download-button" id="apply-btn" onclick="applyFormValid()">Submit</button>
-              </form>
-            </div>
-            
-         </div>
-      </div>
-      
-    </section>
-
-    <!-- Features -->
+    
+    <!-- Featues -->
 
     <section id="features">
       <div data-aos="fade-up">
         <div class="fea-logo">
           <img src="./Images/features.png" alt="" srcset="">
-          <h2>Perks of KCC</h2>
+          <h2 class="heading-name">Key Highlights of the Campus</h2>
         </div>
-        <i class="fa-solid fa-thumbtack"><em data-aos="fade-up">Affliated to Kolhan University, Chaibasa</em></i>
-          <p data-aos="fade-up"><img src="./Images/ribbon.png" alt="" class="ribbon-img">NCTE, UGC.</p>
+        <i class="fa-solid fa-thumbtack"><em>Affliated to Kolhan University, Chaibasa</em></i>
+           <p><img src="./Images/ribbon.png" alt="" class="ribbon-img" height="16px" width> NCTE, UGC.</p>
   
-          <div class="feature-base" data-aos="fade-up">
+          <div class="feature-base">
+
               <div class="feature-box">
-                <img src="./Images/graduated.png" alt="graduated" srcset="" class="features">
-                <a href="./Sources/Scholarship.pdf" target="_blank"><h3>Elite Enviorment</h3></a>
-                <p>So much of options, just at Jamshedpur with an elite facilites to students.</p>
-               
+                <img src="./Images/scholarship.png" alt="graduated" srcset="" class="features">
+                <a href="./Sources/Scholarship.pdf" target="_blank"><h3>Easy Scholarship</h3></a>
+                <p>Great scholarships to the students who are economically deprivated.</p>         
               </div>
+
               <div class="feature-box">
                 <img src="./Images/recruitment (1).png" alt="graduated" srcset="" class="features">
                 <a href="./Sources/placement.pdf" target="_blank"><h3>Reputated Companies visit.</h3></a>
                 <p>Top IT Companies vizz TCS, Wipro are at your doorstep</p>
-    
-  
               </div>
+
+              <div class="feature-box">
+                <img src="./Images/college.png" alt="graduated" srcset="" class="features">
+                <a><h3>Elite Envoirment</h3></a>
+                <p>So many courses avaliable inside your own city, Jamshedpur</p>
+              </div>
+
+              <div class="feature-box">
+                <img src="./Images/wifi.png" alt="graduated" srcset="" class="features">
+                <a><h3>Net surfing and Free-Wifi</h3></a>
+                <p>Free Wifi avaliable all over the campus and Net surfing facilty avaliable in the computer labs </p>
+              </div>
+
+              <div class="feature-box">
+                <img src="./Images/canteen.png" alt="graduated" srcset="" class="features">
+                <a><h3>Canteen </h3></a>
+                <p>Light snacks and other eatables are avaliable at reasonable prices during the working hours.</p>
+              </div>              
+
               <div class="feature-box">
                 <img src="./Images/library.png" alt="graduated" srcset="" class="features">
-                <a href="./Sources/Library.pdf" target="_blank"><h3>Extensive Library.</h3></a>
+                <a><h3>Library and Reading Room.</h3></a>
                 <p>All in one library and ace reading room making the students feel like home</p>
-               
               </div>
+
+              <div class="feature-box">
+                <img src="./Images/fan-club.png" alt="graduated" srcset="" class="features">
+                <a><h3>Rotract Club</h3></a>
+                <p>In a small span of the club, it has done commendable jobs outside and inside the campus.</p>
+              </div>
+
               <div class="feature-box">
                 <img src="./Images/world-book-day.png" alt="graduated" srcset="" class="features">
                 <a href="../Sources/sparc.pdf" target="_blank"><h3>SPArC.</h3></a>
                 <p>Organising Communal Harmony week is celebrated. Yearly fest is organised</p>
-  
               </div>
+              
+              <div class="feature-box">
+                <img src="./Images/career.png" alt="graduated" srcset="" class="features">
+                <a><h3>Carrer Planning and Guidance Cell</h3></a>
+                <p>Organises group and individual councseling sessions for students who ofetn face difficulty in carrer in vicinity of proper guidance</p>
+              </div>
+
               <div class="feature-box">
                 <img src="./Images/military.png" alt="graduated" srcset="" class="features">
                 <a href="./Sources/NCC.pdf" target="_blank"><h3>National Cadet Corps.</h3></a>
@@ -233,77 +263,62 @@
               </div>
           </div>
       </div>
-     
     </section>
 
-    <!-- Carousel -->
+    <!-- Eligibilty Criteria  -->
+    
+    <section class="eligible-main" id="eligible">
+      <div data-aos="fade-up">
 
-    <section id="slide">
-      <div id="carouselExampleControls" class="carousel slide" data-ride="false" data-aos="fade-up">
-          <div class="carousel-inner">
-      
-            <div class="carousel-item active">
-              <h2 class="testimonial-text-one">
-                "one of the oldest college in Jamshedpur"
-              </h2>
-            </div>
-           
-            <div class="carousel-item">
-              <em><b class="notes">The Founder's Vision:-</b></em>
-              <h2 class="testimonial-text">
-                "An institution is known not for its building and architectural beauty but because of the grace, dignity, vision and devotion of the people associated with it."
-              </h2>
-              <br>
-              <span><img src="./Images/Founder.gif" alt="" width="80px" height="80px"></span>
-              <br>
-              <b><em style="color: yellowgreen; text-align: center;">~SYED TAFAZZUL KARIM (1886-1965)</em></b>
-            </div>
-      
-            <div class="carousel-item">
-              <em><b class="notes">The Trustee says:-</b></em>
-              <h2 class="testimonial-text">
-                "An institution is known not for its building and architectural beauty but because of the grace, dignity, vision and devotion of the people associated with it."
-              </h2>
-              <br>
-              <span><img src="./Images/trustee.jpg" alt="" width="80px" height="80px"></span>
-              <br>
-              <b><em style="color: yellowgreen;">~SYED ASHFAQUE KARIM</em></b>
-            </div>
-      
-            <div class="carousel-item">
-      
-              <em><b class="notes">Words of Secratary</b></em>
-              <h2 class="testimonial-text">
-                "We are striving to serve the community, the society and the nation to which we belong. We are on a constant journey of service and excellence."
-              </h2>
-              <br>
-              <span><img src="./Images/Secratary.jpeg" alt="" width="80px" height="80px"></span>
-              <br>
-              <b><em style="color: yellowgreen;">~DR. MOHAMMAD ZAKARIA</em></b>
-            </div>
-      
-            <div class="carousel-item">
-              <em><b class="notes">Love from the President:-</b></em>
-              <h2 class="testimonial-text">
-                "I am personally very proud of my 30-35 years association with Karim City College. It is satisfying to see the growth of this institution in conventional and highly techno savy disciplines."
-              </h2>
-              <br>
-              <span><img src="./Images/president.jpg" alt="" width="80px" height="80px"></span>
-              <br>
-              <b><em style="color: yellowgreen;">~AZIZ HUSAIN</em></b>
+        <div class="fea-logo">
+          <img src="./Images/skills.png" alt="" srcset="">
+          <h2 class="heading-name">Eligibilty Criteria</h2>
+        </div>
+
+        <div class="row eligible">
+          <div class="col-lg-4 col-md-6 Structure-column">
+            <div class="card">
+              <div class="card-header">
+                <h3>Eligibilty for Admission</h3>
+              </div>
+              <div class="card-body">
+              <ul>
+                <li>A candidate may be admitted to BCA cousre for the degree of Bachelor of Computer Applications , if he or she passed the Intermidiate examinations(I.SC./I.Com/I.A./10+2) of a borad / University established by law or any other examination recognized by the university as eqivalent there to with minimum 45% aggregrate along with Maths as a subject.</li>
+                <li>
+                  The candidates filling the criterion can apply for admission  in BCA directly on the website or by visting the college campus by purchasing the prospectus and admission form from the college.
+                </li>
+                <br>
+              </ul>
+                </a>
+              </div>
             </div>
           </div>
-          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only"></span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only"></span>
-          </a>
+
+          <div class="col-lg-4 col-md-6 Structure-column">
+            <div class="card">
+              <div class="card-header">
+                <h3>Selection Procedure</h3>
+              </div>
+              <div class="card-body">
+              <ul>
+                <li>A candidate seeking admission needs to apply for the course on or before the last date; admission form must be filled properly and clearly, supported with scanned documents of marksheet, school/ College leaving Certificate and Migration Certificate of Intermidiate Exams</li>
+                <br>
+                <li>A list of candidates will be announced. The selected candiadtes must take admission by producing all required documents and after paying the fess electronically or by Demand Draft.</li>
+                <br>
+                <li>The college reserves rights to cancel the candidature of any canditate in case of discrepancy. No personal meeting will be tolarated in case of no addmission</li>
+
+              </ul>
+                </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
         </div>
-       
+
+      </div>
     </section>
+
 
     <!-- Structure -->
 
@@ -311,7 +326,7 @@
       <div data-aos="fade-up">
         <div class="fea-logo">
           <img src="./Images/search.png" alt="" srcset="">
-          <h2>Details of the BCA </h2> <br>
+          <h2 class="heading-name">Cousre Details</h2> <br>
          </div>
         
           <div class="row">
@@ -327,7 +342,9 @@
                   <br>
                   <li>A student shall have to secure minimum <b> <em> 45% marks</em></b> in both end semsters and internal semesters in both theory and practical papers, seperately to pass </li>
                 </ul>
-                  </button>
+                  <a href="./Sources/BCA Syllabus Kolhan University.pdf" target="_blank" rel="noopener noreferrer"><button>
+                    Download Syllabus
+                  </button></a>
                   </a>
                 </div>
               </div>
@@ -374,7 +391,7 @@
       <div data-aos="fade-up">
         <div class="fea-logo">
           <img src="./Images/gallery.png" alt="" srcset="">
-          <h2>Gallery</h2>
+          <h2 class="heading-name">Gallery</h2>
          </div>
        
         <div class="gallery-image">
@@ -394,9 +411,13 @@
           <a href="./Images/gallery/celeb2.webp" data-lightbox="mygallery"><img src="./Images/gallery/celeb2.webp" alt="teachers day 1" srcset=""></a>
           <a href="./Images/gallery/celeb3.webp" data-lightbox="mygallery"><img src="./Images/gallery/celeb3.webp" alt="teachers day 1" srcset=""></a>
           <a href="./Images/gallery/celeb4.webp" data-lightbox="mygallery"><img src="./Images/gallery/celeb4.webp" alt="teachers day 1" srcset=""></a>
+          <a href="./Images/gallery/image cw.jpg" data-lightbox="mygallery"><img src="./Images/gallery/image cw.jpg" alt="college students" srcset=""></a>
+          <a href="./Images/gallery/a (1).jpg" data-lightbox="mygallery"><img src="./Images/gallery/a (1).jpg" alt="college students" srcset=""></a>
+          <a href="./Images/gallery/a (2).jpg" data-lightbox="mygallery"><img src="./Images/gallery/a (2).jpg" alt="college students" srcset=""></a>
+          <a href="./Images/gallery/a (3).jpg" data-lightbox="mygallery"><img src="./Images/gallery/a (3).jpg" alt="college students" srcset=""></a>
+          <a href="./Images/gallery/a (4).jpg" data-lightbox="mygallery"><img src="./Images/gallery/a (4).jpg" alt="college students" srcset=""></a>
         </div>
       </div>
-      
     </section>
 
 <!-- reviews -->
@@ -406,7 +427,7 @@
 
         <div class="fea-logo" >
           <img src="./Images/review.png" alt="" srcset="">
-          <h2>Reviews</h2>
+          <h2 class="heading-name">Reviews</h2>
         </div>
   
         <div class="person-box">
@@ -482,7 +503,7 @@
       <div data-aos="fade-up">
         <div class="fea-logo">
           <img src="./Images/review.png" alt="" srcset="">
-          <h2>Contact Us</h2> <br>
+          <h2 class="heading-name">Contact Us</h2> <br>
         </div>
         <em style="background: #F9F9FF;">Call us at +91 657-2431778, 2423863, 2440206, 2437386</em>
          <div class="contact-item">
@@ -491,16 +512,16 @@
             </div>
   
             <div class="feedback-form">
-              <form action="" name = "myform" class="feedback-forms">
-                <input type="text" placeholder="Enter Your name" class="feedback-form" required name="name">
+              <form action="/FeedbakRegister" method="post" name="myform" class="feedback-forms">
+                <input type="text" placeholder="Enter Your name" class="feedback-form" required name="feedname">
             
-                <input type="email" placeholder="Enter Your Mail Id" class="feedback-form" required id="Mail"> 
+                <input type="email" id="receipent_mail" placeholder="Enter Your Mail Id" class="feedback-form" required name="feedMail"> 
                 
-                <input type="number" placeholder="Enter Your Phone number" class="feedback-form" required id="phone">
+                <input type="number" placeholder="Enter Your Phone number" class="feedback-form" required id="phone" name="feedphone">
   
-                <textarea name="" id=""  rows="5" placeholder="Message"></textarea required><br>
+                <textarea name="feedreason" id=""  rows="5" placeholder="How may we help you?"></textarea required><br>
                   
-                <button type="button" class="btn btn-lg btn-outline-dark download-button">Submit</button>
+                <button type="submit" class="btn btn-lg btn-outline-dark download-button">Submit</button>
               </form>
             </div>
             
@@ -618,6 +639,9 @@
         duration: 1000 
       });
     </script>
+
+    <!-- smtpjs script -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>  
 
     <script src="./js/script.js"></script>
   </body>

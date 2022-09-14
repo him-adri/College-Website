@@ -1,11 +1,16 @@
 doctype html
 html(lang="en")
     head 
-        title=title
+        title="KCC BCA Home"
+        link(rel="shortcut icon", href="./Images/logo.jpg", type="image/x-icon")
+
         include include/style
     body
         .page-wrapper 
-            include include/header
-            include include/ques
-            include include/homepage
+            include include/navbar
             block content
+            include include/header
+            include include/resources
+            include include/placement
+            include include/payfees
+            

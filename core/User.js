@@ -23,16 +23,14 @@ User.prototype = {
     },
     create : function(body, callback){
         var pwd = body.password;
-
         body.password = bcrypt.hashSync(pwd,10);
-
-        var bind = [];
+         var bind = [];
 
         for(prop in body){
             bind.push(body[prop]);
         }
-
-        let sql = `INSERT INTO users(name, email, password) VALUES (?, ?, ?)`;
+        // ,FName, MName,phno, adno, address
+        let sql = `INSERT INTO users(name, email, password, FatherName,  MothersName,  aadharNumber, PhoneNumber, address) VALUES (?, ?, ?, ?, ?, ?, ?, ?)`;
 
         pool.query(sql, bind, function(err, result){
             if(err) throw err;

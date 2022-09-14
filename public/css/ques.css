@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+span {
+    text-align: start;
+    margin: 20px 10px;
+    padding: 20px 5px;
+    font-size: 4rem;
+    font-weight: 900;
+    font-family: 'font-family: 'Signika Negative', sans-serif;
+  }
+  .title-div {
+    padding: 20px;
+    margin: 30px;
+  }
+  .container {
+    padding: 30px;
+    margin: 30px;
+  }
+  .container .wrapper, 
+  .container .wrapperr  {
+    padding: 12px;
+    border-bottom: 1px solid rgb(23, 98, 121);
+    overflow: hidden;
+  }
+  .container .wrapper a,
+  .container .wrapperr a{
+    text-decoration: none;
+    text-align: start;
+    font-size: 20px;
+    font-family: 'Comfortaa', cursive;
+    color: rgb(21, 82, 82);
+  }
+  .container .wrapper a:hover,
+  .container .wrapperr a:hover{
+    color: rgb(3, 27, 27);
+  }
+  .container .wrapper:hover,
+  .container .wrapperr:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease;
+  }
+  button{
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 19px;
+    color: lightcoral;
+  }
+  button:hover{
+    color: rgb(114, 53, 53);
+  }
+  button:disabled{
+    cursor: not-allowed;
+  }
+  p{
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Comfortaa', cursive;
+    margin: 20px;
+    padding: 8px;
+  }
+  .jobtype {
+    margin: 10px;
+    padding: 10px;
+  }
+  .jobtype li{
+    list-style:square;
+  }
+  .wrapperr {
+    display: none;
+  }
+  .wrapperr:nth-child(1),
+  .wrapperr:nth-child(2),
+  .wrapperr:nth-child(3),
+  .wrapperr:nth-child(4){
+    display: block;
+  }
+  .features{
+    height: 65px;
+  }
+  .year{
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .yearquotes{
+    padding: 20px;
+    font-size: 25px;
+    font-family: 'Cedarville Cursive', cursive;
+  }
+ 
+  /* form */
+
+  .formContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:25px;
+}
+
+.formContainercontainer form{
+  padding:20px;
+  width:700px;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+
+.formContainer form .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap:15px;
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+.formContainer form .row .col{
+  flex:1 1 250px;
+}
+
+.formContainer form .row .col .title{
+  font-size: 20px;
+  color:#333;
+  margin: 10px;
+  padding: 20px;
+  text-transform: uppercase;
+}
+
+.formContainer form .row .col .inputBox{
+  margin:15px 20px;
+}
+
+.formContainer form .row .col .inputBox span{
+  margin-bottom: 5px;
+  display: block;
+  font-size: 14px;
+  font-family: 'Signika Negative', sans-serif;
+}
+
+.formContainer form .row .col .inputBox input{
+  width: 80%;
+  border:1px solid #ccc;
+  padding:10px 15px;
+  font-size: 15px;
+  text-transform: none;
+}
+
+.formContainer form .row .col .inputBox input:focus{
+  border:1px solid #000;
+}
+
+.formContainer form .row .col .flex{
+  display: flex;
+}
+
+.formContainer form .row .col .flex .inputBox{
+  margin-top: 5px;
+}
+
+.formContainer form .row .col .inputBox img{
+  height: 34px;
+  margin-top: 5px;
+  filter: drop-shadow(0 0 1px #000);
+}
+
+.formContainer form .submit-btn{
+  width: 70%;
+  padding:12px;
+  font-size: 17px;
+  background: #27ae60;
+  color:#fff;
+  margin: 50px 20px;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+.formContainer form .submit-btn:hover{
+  background: #2ecc71;
+}

@@ -1,0 +1,51 @@
+link(rel="stylesheet", href="css/ques.css")
+
+.title-div#payfees
+  img(src='./Images/sponsorship.png' alt='' srcset='' height='55px ' width='55px')
+  span Pay Fees
+
+
+
+.formContainer#form1
+  form(action="/payment" method="post")
+    .row
+      .col
+        h3.title billing address
+        .inputBox
+          span.formElement full name :
+          input(type="text", placeholder="john deo" name="billName")
+        .inputBox
+          span.formElement email :
+          input(type="email", placeholder="example@example.com" name="billMail")
+        .inputBox
+          span.formElement college roll :
+          input(type="text", placeholder="CACOM19..." name="billRoll")
+        .inputBox
+          span.formElement Year of college :
+          input(input="number", placeholder="1" name="yrCollege")
+        .inputBox
+          span.formElement Amount to be paid :
+          input(disabled name="billCity" value="42530")
+        .flex
+            input.submit-btn(type="submit", value="proceed to checkout" name="billBtn")
+      .col
+        h3.title payment
+        .inputBox
+          span.formElement cards accepted :
+          img(src="./Images/card_img.png", alt)
+        .inputBox
+          span.formElement name on card :
+          input(type="text", placeholder="mr. john deo" name="billCard")
+        .inputBox
+          span.formElement Card number :
+          input(type="number", placeholder="1111-2222-3333-4444" name="billCardNo")
+        .inputBox
+          span.formElement exp month :
+          input(type="text", placeholder="january" name="billExp")
+        .flex
+          .inputBox
+            span.formElement exp year :
+            input(type="number", placeholder="2022" name="billExpYear")
+          .inputBox
+            span.formElement CVV :
+            input(type="text", placeholder="1234" name="billCvv")
